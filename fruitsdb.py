@@ -21,7 +21,7 @@ def homepage():
     fruits= get_fruits()
     actual_values= ""
     for fruit in fruits:
-        actual_values+="<p>"+ fruit + "</p>"
+        actual_values +="<p>"+ fruit + "</p>"
     return html_page.replace("$$FRUITS$$", actual_values)
 
 @app.route("/about")
